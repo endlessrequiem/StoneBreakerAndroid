@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainmenu">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:text="Main Menu"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="363dp"
+        android:layout_height="269dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.238"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="73dp"
+            android:layout_height="41dp"
+            android:layout_below="@+id/mLandmark"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="28dp"
+            android:text="Landmark Detector"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toEndOf="@+id/mLandmark"
+            app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/mLandmark"
+            android:layout_width="60dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@+id/mTextActivity"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="80dp"
+            android:clickable="true"
+            android:src="@android:drawable/ic_menu_mapmode"
+            app:backgroundTint="@android:color/black"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/faceread" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/imageanalyzer"
+            android:layout_width="59dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="9dp"
+            android:clickable="true"
+            android:src="@android:drawable/ic_menu_gallery"
+            app:backgroundTint="@android:color/background_dark"
+            app:elevation="0dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toTopOf="@+id/faceread"
+            app:layout_constraintEnd_toStartOf="@+id/textView45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/faceread"
+            android:layout_width="59dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="9dp"
+            android:clickable="true"
+            android:src="@android:drawable/ic_menu_my_calendar"
+            app:backgroundTint="@android:color/background_dark"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toTopOf="@+id/mLandmark"
+            app:layout_constraintEnd_toStartOf="@+id/textView47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageanalyzer" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/pwgenerator"
+            android:layout_width="59dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="80dp"
+            android:clickable="true"
+            android:src="@android:drawable/ic_menu_sort_alphabetically"
+            app:backgroundTint="@android:color/background_dark"
+            app:elevation="0dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView48"
+            app:layout_constraintStart_toEndOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/SmileFinder" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/reader"
+            android:layout_width="59dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="9dp"
+            android:clickable="true"
+            android:src="@android:drawable/ic_menu_camera"
+            app:backgroundTint="@android:color/background_dark"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toTopOf="@+id/SmileFinder"
+            app:layout_constraintEnd_toStartOf="@+id/textView46"
+            app:layout_constraintStart_toEndOf="@+id/textView45"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="59dp"
+            android:layout_height="39dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="28dp"
+            android:text="Image Analyzer"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            app:layout_constraintBottom_toTopOf="@+id/textView47"
+            app:layout_constraintStart_toEndOf="@+id/imageanalyzer"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="60dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="78dp"
+            android:layout_marginBottom="210dp"
+            android:text="QR Code Reader"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/reader"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="61dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="28dp"
+            android:text="Face Analyzer"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            app:layout_constraintStart_toEndOf="@+id/faceread"
+            app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="74dp"
+            android:layout_height="44dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="64dp"
+            android:layout_marginBottom="85dp"
+            android:text="Password Generator"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pwgenerator"
+            app:layout_constraintTop_toBottomOf="@+id/smilefindtext" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/SmileFinder"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="46dp"
+            android:layout_marginTop="11dp"
+            android:clickable="true"
+            app:backgroundTint="@android:color/black"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toTopOf="@+id/pwgenerator"
+            app:layout_constraintEnd_toStartOf="@+id/smilefindtext"
+            app:layout_constraintStart_toEndOf="@+id/textView47"
+            app:layout_constraintTop_toBottomOf="@+id/reader"
+            app:srcCompat="@android:drawable/ic_search_category_default" />
+
+        <TextView
+            android:id="@+id/smilefindtext"
+            android:layout_width="78dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="63dp"
+            android:layout_marginBottom="165dp"
+            android:text="Smile Finder"
+            android:textColor="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/SmileFinder"
+            app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="0dp"
+        android:layout_height="194dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="top|center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+
+
+</android.support.constraint.ConstraintLayout>
